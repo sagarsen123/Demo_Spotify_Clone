@@ -46,7 +46,6 @@ border-radius: 50%;
 .SongInfoDetails h4 {
   font-size: 0.8rem;
   height: 1rem;
-  overflow-x: hidden;
 }
 
 .SongInfoDetails p {
@@ -281,6 +280,7 @@ input[type="range"]:active::-moz-range-thumb {
 
   .musicVolume {
     font-size: 1rem;
+    margin: 1rem;
   }
   .playerContainer1{
     width: 100%;

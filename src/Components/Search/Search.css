@@ -211,4 +211,19 @@ p {
   font-size: 0.6rem;
   
 }
+.searchedResultImg {
+  cursor: pointer;
+  position: relative;
+  width: 18rem;
+  gap: 2rem;
+  height: max-content;
+  border-radius: 20px;
+}
+.searchedResultImg img {
+  padding: 0;
+  width: 40%;
+  min-width: 18rem;
+  max-height: 18rem;
+  border-radius: 20px;
+}
 }

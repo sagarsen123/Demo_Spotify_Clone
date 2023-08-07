@@ -70,14 +70,24 @@ const Home = () => {
       
   }, []);
 
+const GetHeading = () =>{
+  let time = new Date().getHours();
 
+  if(time<12) return "Good Morning!"
+  else if(time >=12 && time <= 17) return "Good Afternoon!"
+  else return "Good Evening!"
+}
 
   return HomeLoading ? (
     <p>Loading</p>
   ) : (
     <div className="Home">
       <div className="head">
+      <div className="headText">
+          <h1><GetHeading/></h1>
+        </div>
         <div className="homeFunctions">
+          
           <div className="notification">
             <img src={HomeNoification} alt="Notifications" />
           </div>
@@ -85,9 +95,7 @@ const Home = () => {
             <img src={HomeDp} alt="" />
           </Link>
         </div>
-        <div className="headText">
-          <h1>Good Evening!</h1>
-        </div>
+       
       </div>
       <div className="PlaylistContainer">
         <div className="playGroupHead">

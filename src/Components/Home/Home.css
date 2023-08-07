@@ -4,16 +4,17 @@
 }
 
 .head {
-
+  display: flex;
+  justify-content: space-between;
+  
 }
 .headText {
-
   text-align: left;
 }
 .headText h1 {
-    color: #1ed760;
-    font-size: 4.2rem;
-    font-weight: 600;
+  color: #1ed760;
+  font-size: 3.5rem;
+  font-weight: 600;
 }
 
 .homeFunctions {
@@ -26,7 +27,7 @@
 
 .homeFunctions img {
   padding: 0.4rem;
-  margin:.11rem;
+  margin: 0.11rem;
 }
 
 .PlaylistContainer {
@@ -50,34 +51,67 @@
   color: rgba(30, 215, 96, 1);
   margin: 0;
   cursor: pointer;
-  margin-bottom : .3rem
+  margin-bottom: 0.3rem;
 }
 
-
-.playCardsGroup{
-    display: flex;
-    flex-direction: row;
-    padding: 0.4rem 0rem;
-    align-items: center;
-    gap: 4rem;
-}
-
-
-.row{
-  gap: 4rem;
+.playCardsGroup {
   display: flex;
-  justify-content:flex-start;
+  flex-direction: row;
+  padding: 0.4rem 0rem;
+  align-items: center;
+  gap: 4rem;
 }
 
+.row {
+  gap: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.profile img {
+  width: 64px;
+  border-radius: 50%;
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 690px) {
+  .Home {
+    padding: 1rem;
+  }
+  .headText h1 {
+    color: #1ed760;
+    font-size: 3rem;
+    font-weight: 600;
+  }
   .playCardsGroup {
     justify-content: center;
     align-items: center;
     gap: 1rem;
   }
-  .row{
-    
+  .row {
     justify-content: center;
   }
+  .profile img {
+    width: 50px;
+    border-radius: 50%;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .headText h1 {
+    color: #1ed760;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .row {
+    gap: 1rem ;
+    display: flex;
+    justify-content: center;
+}
+.homeFunctions img {
+  padding: 0.4rem;
+  margin: 0.11rem;
+  width: 40px;}
+.profile img {
+  width: 40px;
+  border-radius: 50%;
+}
 }

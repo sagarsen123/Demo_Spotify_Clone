@@ -40,12 +40,24 @@ const Search = () => {
   };
 
   const handleSubmit = (e) => {
+    
     e.preventDefault();
-    setSearched(false);
-    getSearch();
-    setSearched(true);
+    // if(!searchInput) return;
+    // setSearched(false);
+    // getSearch();
+    // setSearched(true);
   };
 
+  useEffect(()=>{
+    if(!searchInput) return;
+
+    const getData =  setTimeout(()=>{
+      setSearched(false);
+    getSearch();
+    setSearched(true);
+    },2000);
+   return()=> clearTimeout(getData);
+  },[searchInput]);
 
   const handleArtistClick = async(artistid) =>{
     if(artistid==="") return console.log('no artist id found');
@@ -111,7 +123,8 @@ const Search = () => {
             type="text"
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
-            placeholder="Search for artists, music and genres..."
+            // placeholder="Search for artists, music and genres..."
+            placeholder="Search.."
           />
           <select
             value={filter}

@@ -71,7 +71,7 @@
 .logoutBtn {
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: left;
   display: flex;
   align-items: center;
@@ -79,6 +79,7 @@
 }
 
 .logoutBtn span {
+  font-size: 1rem;
   margin-left: 0.6rem;
 }
 

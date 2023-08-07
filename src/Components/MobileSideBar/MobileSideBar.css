@@ -1,0 +1,57 @@
+.MobileSideBarWapper{
+    display: none;
+    position: absolute;
+    left: 0px;
+    background-color: #242424;
+    color: #1ed760;
+    height: 4rem;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem;
+}
+
+
+
+
+
+
+.navLinks{
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.Links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  justify-content: center;
+  list-style: none;
+  font-size: 2rem;
+  color: #1ed760;
+  text-decoration: none;
+  transition: 0.6s ease-in;
+}
+
+
+.navLinks span{
+  font-size: 1rem;
+}
+
+.navLinks li:hover{
+  cursor: pointer;
+  color: white;
+  
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .MobileSideBarWapper {
+      display: block;
+    }
+   
+  }

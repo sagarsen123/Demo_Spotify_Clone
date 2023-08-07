@@ -1,0 +1,83 @@
+.Home {
+  padding: 1rem 2rem;
+  max-height: 100vh;
+}
+
+.head {
+
+}
+.headText {
+
+  text-align: left;
+}
+.headText h1 {
+    color: #1ed760;
+    font-size: 4.2rem;
+    font-weight: 600;
+}
+
+.homeFunctions {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.homeFunctions img {
+  padding: 0.4rem;
+  margin:.11rem;
+}
+
+.PlaylistContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.playGroupHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.playGroupHead h3 {
+  color: white;
+  margin-right: 1rem;
+}
+
+.playGroupHead p {
+  color: rgba(30, 215, 96, 1);
+  margin: 0;
+  cursor: pointer;
+  margin-bottom : .3rem
+}
+
+
+.playCardsGroup{
+    display: flex;
+    flex-direction: row;
+    padding: 0.4rem 0rem;
+    align-items: center;
+    gap: 4rem;
+}
+
+
+.row{
+  gap: 4rem;
+  display: flex;
+  justify-content:flex-start;
+}
+
+
+@media screen and (max-width: 600px) {
+  .playCardsGroup {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .row{
+    
+    justify-content: center;
+  }
+}

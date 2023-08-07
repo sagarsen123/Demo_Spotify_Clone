@@ -1,0 +1,90 @@
+.SideBar {
+  width: 20%;
+  max-width: 30rem;
+  min-width: 15rem;
+  background: #1ed760;
+  height: 100vh;
+}
+
+.sideBarLogo {
+  height: 15vh;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sideBarLogo img{
+  max-width: 8rem;
+  width: 100%;
+}
+
+.navbar{
+  padding: 0 2px 0 0;;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.navLink {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  margin: 0.1rem;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  font-family: "Raleway";
+}
+
+.navLink:hover {
+  color: #1ed760;
+  background-color: white;
+  border-radius: 0px 25px 25px 0px;
+}
+
+.active {
+  color: #1ed760;
+  background-color: white;
+  border-radius: 0px 25px 25px 0px;
+}
+
+.navLink span {
+  margin-left: 0.8rem;
+  font-size: 1rem;
+}
+
+.SideBarNavigation {
+  display: flex;
+  height: 84%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logoutBtn {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+}
+
+.logoutBtn span {
+  margin-left: 0.6rem;
+}
+
+
+@media screen and (max-width: 600px) {
+  .SideBar {
+    display: none;
+  }
+}

@@ -64,7 +64,7 @@ const Card = (props) => {
       <img src={props.imgsrc} alt="" />
       <div className="CardDetails">
         <h3>{props.Title}</h3>
-        <p>{props.desc}</p>
+        <p>{props.desc.split(" ").length > 10 ? (props.desc.split(" ").slice(0,10).join(" ")): props.desc}</p>
       </div>
     </div>
   );

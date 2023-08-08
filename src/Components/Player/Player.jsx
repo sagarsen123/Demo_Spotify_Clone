@@ -11,7 +11,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import { IoMdVolumeHigh, IoMdVolumeOff, IoMdVolumeLow } from "react-icons/io";
 
-import { BsPauseFill, BsVolumeUp } from "react-icons/bs";
+import { BsPauseFill } from "react-icons/bs";
 const Player = () => {
   //reducer
   const myState = useSelector((state) => state.loginAndLogout);
@@ -127,7 +127,7 @@ const Player = () => {
     myState.listingofweeksongs,
   ]);
 
-  const donothing = () => {};
+  // const donothing = () => {};
 
   return (
     <div className="player">
@@ -155,7 +155,7 @@ const Player = () => {
           </div>
           <div className="SongInfoDetails">
             <h4 className="songName">
-              {currentTrack ? currentTrack.name : "Song Name"}
+              {currentTrack ? currentTrack.name.substring(0,12) : "Song Name"}
             </h4>
             <p className="artistName">
               {currentTrack?.artists

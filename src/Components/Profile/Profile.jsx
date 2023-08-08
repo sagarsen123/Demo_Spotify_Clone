@@ -78,7 +78,7 @@ const Profile = () => {
             </button>
             <button id="logoutBtn" className="openSpotify " onClick={handleLogout}>
               <span>Log Out</span>
-              <FiExternalLink />
+              {/* <FiExternalLink /> */}
             </button>
           </div>
         </div>
